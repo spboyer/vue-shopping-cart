@@ -32,7 +32,7 @@
   <div class="container main-page-container">
     <div class="row">
       <div class="col-md-6">
-        <h2>Available Items</h2>
+        <h2>Available Items in store</h2>
         <div id="storeItems" class="storeItemBox">
           <div v-for="item in availableItems" :key="item.itemName">
             <StoreItem :item="item" v-on:addToCart="addToCart(item)" />
